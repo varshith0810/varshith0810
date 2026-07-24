@@ -78,7 +78,6 @@
 | **Multi-Agent Job Recommender Dashboard** | Resume-upload pipeline routed through specialized AI agents (via Groq) to match roles | React · FastAPI · Groq · Vector DB |
 | **Autonomous Stock Trading Agent** | Reinforcement-learning trading agent using a Deep Q-Network over large-scale market data | PySpark · DQN · Python |
 | **Student Engagement Classification System** | CNN-based computer-vision model classifying engagement from video frames | CNN · OpenCV · Python |
-| **IPL Analytics Dashboard** | Interactive analytics dashboard exploring IPL match and player data | SQL · Tableau |
 
 <div align="right"><a href="https://github.com/varshith0810?tab=repositories">→ See all repositories</a></div>
 
