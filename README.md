@@ -8,11 +8,11 @@
 
 <br>
 
-<img src="./assets/lanyard.svg?v=1" width="220" alt="Varshith's ID lanyard">
+<img src="./lanyard.svg?v=1" width="220" alt="Varshith's ID lanyard">
 
 <br>
 
-<a href="https://www.linkedin.com/">
+<a href="https://www.linkedin.com/in/varshith-reddy-bommineni/">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-1f6f5c?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
 <a href="mailto:bomminenivarshith@gmail.com">
@@ -87,15 +87,15 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-<img src="./assets/stats.svg?v=1" width="47%" alt="GitHub stats card">
-<img src="./assets/langs.svg?v=1" width="47%" alt="Most used languages card">
+<img src="./stats.svg?v=1" width="47%" alt="GitHub stats card">
+<img src="./langs.svg?v=1" width="47%" alt="Most used languages card">
 </div>
 
 <div align="center">
-<img src="./assets/trophies.svg?v=1" width="94%" alt="GitHub trophies card">
+<img src="./trophies.svg?v=1" width="94%" alt="GitHub trophies card">
 </div>
 
-> Stats cards above are locally generated static SVGs (no third-party rate-limited services) — update the numbers in `assets/stats.svg`, `assets/langs.svg`, and `assets/trophies.svg` to match your real GitHub activity whenever you like.
+> Stats cards above are locally generated static SVGs (no third-party rate-limited services) — update the numbers in `stats.svg`, `langs.svg`, and `trophies.svg` to match your real GitHub activity whenever you like.
 
 <br>
 
