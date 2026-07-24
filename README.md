@@ -111,24 +111,24 @@
 
 <br>
 
-## 🐍 Contribution Snake
+### 🐍 Watch the snake eat my contributions
 
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/varshith0810/varshith0810/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/varshith0810/varshith0810/output/github-contribution-grid-snake.svg">
-  <img src="https://raw.githubusercontent.com/varshith0810/varshith0810/output/github-contribution-grid-snake.svg" alt="Contribution snake animation" width="100%">
-</picture>
-</div>
+<img src="https://raw.githubusercontent.com/varshith0810/varshith0810/output/github-snake.svg" alt="Contribution snake"/>
 
-<sub>Generated daily by <code>.github/workflows/github-snake.yml</code> via <a href="https://github.com/Platane/snk">Platane/snk</a> — first run populates the <code>output</code> branch.</sub>
+<br/><br/>
 
-<br><br>
+### 📫 Let's Connect
 
-<div align="center">
+<a href="mailto:bomminenivarshith@gmail.com"><img src="https://img.shields.io/badge/Email-ff7eb6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://github.com/varshith0810"><img src="https://img.shields.io/badge/GitHub-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://www.instagram.com/varshith_reddy_bommineni"><img src="https://img.shields.io/badge/Instagram-e879f9?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
-**Thanks for scrolling all the way down — now go build something.** 🔥
+<br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=varshith0810&style=flat-square&color=22d3a6&label=THANKS+FOR+VISITING" alt="Visitor badge">
+<img src="https://komarev.com/ghpvc/?username=varshith0810&color=ff7eb6&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
+
+<br/><br/>
+
+*⭐️ Always learning, always building.* 💗
 
 </div>
