@@ -1,0 +1,145 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0c12"/><stop offset="100%" stop-color="#141020"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff3b52"/><stop offset="35%" stop-color="#ffb648"/><stop offset="70%" stop-color="#3fa9d6"/><stop offset="100%" stop-color="#22d3a6"/>
+    </linearGradient>
+    <linearGradient id="shineG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="50%" stop-color="#fff" stop-opacity="0.35"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="haoriMini" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#22d3a6" opacity="0.10"/>
+      <rect x="7" y="7" width="7" height="7" fill="#22d3a6" opacity="0.10"/>
+      <rect x="7" y="0" width="7" height="7" fill="#ff3b52" opacity="0.06"/>
+      <rect x="0" y="7" width="7" height="7" fill="#ff3b52" opacity="0.06"/>
+    </pattern>
+<clipPath id="trophiesClip"><rect width="900" height="200" rx="18"/></clipPath></defs>
+  <style>
+    .card-bg-in { animation: cardFade 0.6s ease-out both; }
+    @keyframes cardFade { from { opacity:0; } to { opacity:1; } }
+    .slide-in { opacity:0; animation: slideIn 0.6s cubic-bezier(.2,.8,.3,1) forwards; }
+    @keyframes slideIn { from { opacity:0; transform: translateX(-16px);} to { opacity:1; transform: translateX(0);} }
+    .bar-grow { animation: barGrow 1.2s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .pop-in { opacity:0; animation: popIn2 0.5s cubic-bezier(.2,1.4,.4,1) forwards; }
+    @keyframes popIn2 { 0% { opacity:0; transform: scale(0.5);} 70% { opacity:1;} 100% { opacity:1; transform: scale(1);} }
+    .shine-sweep { animation: sweep 4.5s ease-in-out infinite; }
+    @keyframes sweep { 0% { transform: translateX(-140%);} 45% { transform: translateX(140%);} 100% { transform: translateX(140%);} }
+    .ring-draw { animation: ringDraw 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes ringDraw { from { stroke-dashoffset: var(--full);} }
+    .twinkle2 { animation: tw2 2.4s ease-in-out infinite; }
+    @keyframes tw2 { 0%,100% { opacity:0.3;} 50% { opacity:1;} }
+    .crest-spin-mini { animation: crestSpinMini 8s linear infinite; transform-origin: center; opacity: 0.85; }
+    @keyframes crestSpinMini { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+    .wisteria-mini { animation: wMiniSway 4.5s ease-in-out infinite; transform-origin: center top; opacity: 0.8; }
+    @keyframes wMiniSway { 0%,100% { transform: rotate(-7deg);} 50% { transform: rotate(7deg);} }
+    @media (prefers-reduced-motion: reduce) {
+      .card-bg-in, .slide-in, .bar-grow, .pop-in, .shine-sweep, .ring-draw, .twinkle2, .crest-spin-mini, .wisteria-mini { animation: none !important; opacity:1 !important; }
+    }
+</style>
+  <g clip-path="url(#trophiesClip)" class="card-bg-in">
+    <rect width="900" height="200" fill="url(#cbg)"/>
+    <rect width="900" height="200" fill="url(#haoriMini)"/>
+    <rect x="0.75" y="0.75" width="898.5" height="198.5" rx="17" fill="none" stroke="rgba(255,255,255,0.10)"/>
+    <g transform="translate(24,8) scale(0.75)">
+      <g class="wisteria-mini" style="animation-delay:0.40s;animation-duration:5.00s">
+        <line x1="0" y1="-6" x2="0" y2="0" stroke="#4f7d4a" stroke-width="1.4"/>
+        <ellipse cx="0" cy="0" rx="11.0" ry="4.2" fill="#8a6bd1" opacity="0.90"/>
+      <ellipse cx="0" cy="7" rx="10.1" ry="4.2" fill="#c9b3ef" opacity="0.82"/>
+      <ellipse cx="0" cy="14" rx="9.2" ry="4.2" fill="#8a6bd1" opacity="0.74"/>
+      <ellipse cx="0" cy="21" rx="8.3" ry="4.2" fill="#c9b3ef" opacity="0.66"/>
+      <ellipse cx="0" cy="28" rx="7.4" ry="4.2" fill="#8a6bd1" opacity="0.58"/>
+      </g>
+    </g>
+    <g transform="translate(876,8) scale(0.75)">
+      <g class="wisteria-mini" style="animation-delay:1.10s;animation-duration:5.00s">
+        <line x1="0" y1="-6" x2="0" y2="0" stroke="#4f7d4a" stroke-width="1.4"/>
+        <ellipse cx="0" cy="0" rx="11.0" ry="4.2" fill="#8a6bd1" opacity="0.90"/>
+      <ellipse cx="0" cy="7" rx="10.1" ry="4.2" fill="#c9b3ef" opacity="0.82"/>
+      <ellipse cx="0" cy="14" rx="9.2" ry="4.2" fill="#8a6bd1" opacity="0.74"/>
+      <ellipse cx="0" cy="21" rx="8.3" ry="4.2" fill="#c9b3ef" opacity="0.66"/>
+      <ellipse cx="0" cy="28" rx="7.4" ry="4.2" fill="#8a6bd1" opacity="0.58"/>
+      </g>
+    </g>
+    <g transform="translate(10,10)">
+      <g class="pop-in" style="animation-delay:0.15s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#22d3a6" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip0)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip0"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Repositories</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#22d3a6" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#22d3a6">A</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+<g transform="translate(160,10)">
+      <g class="pop-in" style="animation-delay:0.27s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ff3b52" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip1)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip1"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Commits</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#ff3b52" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#ff3b52">A+</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+<g transform="translate(310,10)">
+      <g class="pop-in" style="animation-delay:0.39s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ffb648" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip2)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip2"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Followers</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#ffb648" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#ffb648">B+</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+<g transform="translate(460,10)">
+      <g class="pop-in" style="animation-delay:0.51s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#22d3a6" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip3)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip3"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Pull Requests</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#22d3a6" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#22d3a6">A</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+<g transform="translate(610,10)">
+      <g class="pop-in" style="animation-delay:0.63s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ff3b52" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip4)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip4"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Stars</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#ff3b52" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#ff3b52">B</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+<g transform="translate(760,10)">
+      <g class="pop-in" style="animation-delay:0.75s">
+        <rect width="140" height="180" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ffb648" stroke-width="1.3"/>
+        <g clip-path="url(#trophyClip5)">
+          <rect class="shine-sweep" x="-40" y="0" width="40" height="180" fill="url(#shineG)"/>
+        </g>
+        <clipPath id="trophyClip5"><rect x="0" y="0" width="140" height="180" rx="14"/></clipPath>
+        <text x="70.0" y="40" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#96a0ad">Experience</text>
+        <circle cx="70.0" cy="98" r="38" fill="none" stroke="#ffb648" stroke-width="2.4" opacity="0.85"/>
+        <text x="70.0" y="110" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" fill="#ffb648">S-</text>
+        <text x="70.0" y="158" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#96a0ad">RANK</text>
+      </g>
+    </g>
+  </g>
+</svg>

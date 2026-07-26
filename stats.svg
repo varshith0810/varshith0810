@@ -1,0 +1,108 @@
+<svg width="480" height="220" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0c12"/><stop offset="100%" stop-color="#141020"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff3b52"/><stop offset="35%" stop-color="#ffb648"/><stop offset="70%" stop-color="#3fa9d6"/><stop offset="100%" stop-color="#22d3a6"/>
+    </linearGradient>
+    <linearGradient id="shineG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="50%" stop-color="#fff" stop-opacity="0.35"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="haoriMini" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#22d3a6" opacity="0.10"/>
+      <rect x="7" y="7" width="7" height="7" fill="#22d3a6" opacity="0.10"/>
+      <rect x="7" y="0" width="7" height="7" fill="#ff3b52" opacity="0.06"/>
+      <rect x="0" y="7" width="7" height="7" fill="#ff3b52" opacity="0.06"/>
+    </pattern>
+
+    <clipPath id="statsClip"><rect width="480" height="220" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .card-bg-in { animation: cardFade 0.6s ease-out both; }
+    @keyframes cardFade { from { opacity:0; } to { opacity:1; } }
+    .slide-in { opacity:0; animation: slideIn 0.6s cubic-bezier(.2,.8,.3,1) forwards; }
+    @keyframes slideIn { from { opacity:0; transform: translateX(-16px);} to { opacity:1; transform: translateX(0);} }
+    .bar-grow { animation: barGrow 1.2s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .pop-in { opacity:0; animation: popIn2 0.5s cubic-bezier(.2,1.4,.4,1) forwards; }
+    @keyframes popIn2 { 0% { opacity:0; transform: scale(0.5);} 70% { opacity:1;} 100% { opacity:1; transform: scale(1);} }
+    .shine-sweep { animation: sweep 4.5s ease-in-out infinite; }
+    @keyframes sweep { 0% { transform: translateX(-140%);} 45% { transform: translateX(140%);} 100% { transform: translateX(140%);} }
+    .ring-draw { animation: ringDraw 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes ringDraw { from { stroke-dashoffset: var(--full);} }
+    .twinkle2 { animation: tw2 2.4s ease-in-out infinite; }
+    @keyframes tw2 { 0%,100% { opacity:0.3;} 50% { opacity:1;} }
+    .crest-spin-mini { animation: crestSpinMini 8s linear infinite; transform-origin: center; opacity: 0.85; }
+    @keyframes crestSpinMini { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+    .wisteria-mini { animation: wMiniSway 4.5s ease-in-out infinite; transform-origin: center top; opacity: 0.8; }
+    @keyframes wMiniSway { 0%,100% { transform: rotate(-7deg);} 50% { transform: rotate(7deg);} }
+    @media (prefers-reduced-motion: reduce) {
+      .card-bg-in, .slide-in, .bar-grow, .pop-in, .shine-sweep, .ring-draw, .twinkle2, .crest-spin-mini, .wisteria-mini { animation: none !important; opacity:1 !important; }
+    }
+</style>
+  <g clip-path="url(#statsClip)" class="card-bg-in">
+    <rect width="480" height="220" fill="url(#cbg)"/>
+    <rect width="480" height="220" fill="url(#haoriMini)"/>
+    <rect x="0.75" y="0.75" width="478.5" height="218.5" rx="17" fill="none" stroke="rgba(255,255,255,0.10)"/>
+    <text x="24" y="34" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" fill="#f4f1e8">GitHub Stats</text>
+    <g transform="translate(450,26)">
+      <g class="crest-spin-mini">
+        <circle r="13" fill="none" stroke="#ffb648" stroke-width="2"/>
+        <circle r="7" fill="none" stroke="#8a6bd1" stroke-width="1.4" opacity="0.8"/>
+        <circle r="3" fill="#ffb648"/>
+        <g stroke="#8a6bd1" stroke-width="1.6" opacity="0.9">
+          <line x1="0" y1="-4" x2="0" y2="2"/>
+          <line x1="0" y1="4" x2="0" y2="-2"/>
+          <line x1="-4" y1="0" x2="2" y2="0"/>
+          <line x1="4" y1="0" x2="-2" y2="0"/>
+        </g>
+      </g>
+    </g>
+    <circle class="twinkle2" cx="454" cy="20" r="2.4" fill="#ffb648" opacity="0"/>
+
+    <g transform="translate(90,120)">
+      <circle r="46" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="10"/>
+      <circle r="46" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round"
+              stroke-dasharray="289.03" stroke-dashoffset="289.03" transform="rotate(-90)"
+              class="ring-draw" style="--full:289.03" >
+        <animate attributeName="stroke-dashoffset" from="289.03" to="57.81" dur="1.6s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+      </circle>
+      <text x="0" y="-2" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" fill="#f4f1e8">A+</text>
+      <text x="0" y="17" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#96a0ad">RANK</text>
+    </g>
+
+    <g transform="translate(190,46)">
+      <g class="slide-in" style="animation-delay:0.25s">
+        <text x="0" y="-6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" fill="#96a0ad">Repositories</text>
+        <rect x="0" y="0" width="190" height="6" rx="3" fill="rgba(255,255,255,0.045)"/>
+        <rect x="0" y="0" width="133.0" height="6" rx="3" fill="#22d3a6" style="transform-origin:left center" class="bar-grow" ></rect>
+        <text x="200" y="6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#22d3a6">14</text>
+      </g>
+    </g>
+<g transform="translate(190,84)">
+      <g class="slide-in" style="animation-delay:0.37s">
+        <text x="0" y="-6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" fill="#96a0ad">Commits (this yr)</text>
+        <rect x="0" y="0" width="190" height="6" rx="3" fill="rgba(255,255,255,0.045)"/>
+        <rect x="0" y="0" width="171.0" height="6" rx="3" fill="#ffb648" style="transform-origin:left center" class="bar-grow" ></rect>
+        <text x="200" y="6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ffb648">300+</text>
+      </g>
+    </g>
+<g transform="translate(190,122)">
+      <g class="slide-in" style="animation-delay:0.49s">
+        <text x="0" y="-6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" fill="#96a0ad">Followers</text>
+        <rect x="0" y="0" width="190" height="6" rx="3" fill="rgba(255,255,255,0.045)"/>
+        <rect x="0" y="0" width="104.5" height="6" rx="3" fill="#ff3b52" style="transform-origin:left center" class="bar-grow" ></rect>
+        <text x="200" y="6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ff3b52">growing</text>
+      </g>
+    </g>
+<g transform="translate(190,160)">
+      <g class="slide-in" style="animation-delay:0.61s">
+        <text x="0" y="-6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" fill="#96a0ad">Focus area</text>
+        <rect x="0" y="0" width="190" height="6" rx="3" fill="rgba(255,255,255,0.045)"/>
+        <rect x="0" y="0" width="180.5" height="6" rx="3" fill="#22d3a6" style="transform-origin:left center" class="bar-grow" ></rect>
+        <text x="200" y="6" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#22d3a6">AI / ML</text>
+      </g>
+    </g>
+  </g>
+</svg>
